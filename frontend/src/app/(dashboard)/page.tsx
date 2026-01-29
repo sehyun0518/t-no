@@ -3,7 +3,7 @@
 import { ArrowUpRight, FileText, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { PaperCard } from "@/components/paper/paper-card"
+import { ThesisCard } from "@/components/thesis/thesis-card"
 
 export default function HomePage() {
   // Mock state to demonstrate both "Empty" and "Recent" states if needed
@@ -79,21 +79,21 @@ export default function HomePage() {
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
-                        <PaperCard 
+                        <ThesisCard 
                             id="1"
                             variant="recent"
                             title="Attention Is All You Need"
                             description="The dominant sequence transduction models are based on complex recurrent or convolutional neural networks..."
                             tags={["AI", "NLP", "Transformer"]}
                         />
-                        <PaperCard 
+                        <ThesisCard 
                             id="2"
                             variant="recent"
                             title="Deep Residual Learning for Image Recognition"
                             description="We present a residual learning framework to ease the training of networks that are substantially deeper..."
                             tags={["CV", "Deep Learning"]}
                         />
-                        <PaperCard 
+                        <ThesisCard 
                             id="3"
                             variant="recent"
                             title="BERT: Pre-training of Deep Bidirectional Transformers"
@@ -130,21 +130,21 @@ export default function HomePage() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
-                        <PaperCard 
+                        <ThesisCard 
                             id="4"
                             variant="home"
                             title="Generative Adversarial Nets"
                             description="We propose a new framework for estimating generative models via an adversarial process..."
                             tags={["GAN", "Generative AI"]}
                         />
-                        <PaperCard 
+                        <ThesisCard 
                             id="5"
                             variant="home"
                             title="Playing Atari with Deep Reinforcement Learning"
                             description="We present the first deep learning model to successfully learn control policies directly from..."
                             tags={["RL", "DeepMind"]}
                         />
-                        <PaperCard 
+                        <ThesisCard 
                             id="6"
                             variant="home"
                             title="ImageNet Classification with Deep Convolutional Neural Networks"

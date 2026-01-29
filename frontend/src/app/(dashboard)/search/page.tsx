@@ -92,7 +92,7 @@ export default function SearchPage() {
                 {/* Result Cards List */}
                 <div className="flex flex-col gap-5">
                     {[1, 2, 3].map((i) => (
-                        <Link key={i} href={`/papers/${i}`}>
+                        <Link key={i} href={`/thesis/${i}`}>
                             <div className="bg-white flex items-stretch overflow-hidden rounded-[1rem] shadow-[0px_4px_40px_rgba(0,0,0,0.05)] hover:shadow-[4px_4px_30px_rgba(0,0,0,0.1)] transition-all cursor-pointer group">
                                 {/* Left Content */}
                                 <div className="flex-1 flex flex-col gap-6 p-6">

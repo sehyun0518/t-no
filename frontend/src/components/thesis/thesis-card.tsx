@@ -6,7 +6,7 @@ import { useState } from "react"
 import { ChevronDown, ChevronUp, FolderPlus, Check } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-interface PaperCardProps {
+interface ThesisCardProps {
   id: string
   title: string
   description?: string
@@ -18,7 +18,7 @@ interface PaperCardProps {
   variant?: "home" | "category" | "recent"
 }
 
-export function PaperCard({
+export function ThesisCard({
   id,
   title,
   description,
@@ -28,7 +28,7 @@ export function PaperCard({
   isSelected = false,
   onSelect,
   variant = "home",
-}: PaperCardProps) {
+}: ThesisCardProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   const categories = [
@@ -70,7 +70,7 @@ export function PaperCard({
         )}
       >
         <div className="relative h-[10.2rem] w-full bg-gray-100 shrink-0 flex items-center justify-center overflow-hidden">
-            <Link href={`/papers/${id}`} className="block w-full h-full relative">
+            <Link href={`/thesis/${id}`} className="block w-full h-full relative">
                 {thumbnailUrl !== "/placeholder-paper.jpg" ? (
                     <Image
                     src={thumbnailUrl}
@@ -111,7 +111,7 @@ export function PaperCard({
 
         {/* Content */}
         <div className="flex flex-col p-5 gap-4 h-full relative">
-            <Link href={`/papers/${id}`} className="space-y-2 block">
+            <Link href={`/thesis/${id}`} className="space-y-2 block">
                 <h3 className="font-bold text-base leading-[1.6] text-gray-500 line-clamp-2">
                 {title}
                 </h3>

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ArrowUpDown, Trash2, X, ChevronDown } from "lucide-react"
-import { PaperCard } from "@/components/paper/paper-card"
+import { ThesisCard } from "@/components/thesis/thesis-card"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -118,7 +118,7 @@ export default function CategoryDetailPage({ params }: { params: { id: string } 
         {/* Paper Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 w-full">
             {[1, 2, 3, 4, 5, 6].map((i) => (
-                <PaperCard 
+                <ThesisCard 
                     key={i}
                     id={`${i}`}
                     variant="category"

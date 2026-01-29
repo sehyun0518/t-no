@@ -35,7 +35,7 @@ function ContentInput({ className }: { className?: string }) {
   );
 }
 
-export default function PaperDetailPage() {
+export default function ThesisDetailPage() {
   return (
     <div className="flex flex-row h-full w-full overflow-hidden bg-white">
         {/* CENTER: Main Paper Content */}
