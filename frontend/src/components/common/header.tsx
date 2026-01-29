@@ -6,8 +6,8 @@ import { SidebarTrigger } from "@/components/ui/sidebar"
 
 export function Header() {
   return (
-    <header className="w-full h-[3.75rem] bg-white flex items-center border-b border-gray-100 sticky top-0 z-50">
-      <div className="w-full max-w-[97.5rem] mx-auto px-5 flex items-center justify-between h-full">
+    <header className="w-full h-15 bg-white flex items-center border-b border-gray-100 sticky top-0 z-50">
+      <div className="w-full max-w-390 mx-auto px-5 flex items-center justify-between h-full">
         {/* Left Section: Menu/Close & Logo */}
         <div className="flex items-center gap-5">
           <div className="-ml-2">

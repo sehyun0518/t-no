@@ -33,12 +33,12 @@ function IconEyes({ className }: { className?: string }) {
 
 export function Sidebar() {
   return (
-    <ShadcnSidebar className="border-r border-gray-100 bg-white top-[3.75rem] h-[calc(100vh-3.75rem)] w-[17.5rem]">
+    <ShadcnSidebar className="border-r border-gray-100 bg-white top-15 h-[calc(100vh-3.75rem)] w-70">
       <SidebarHeader className="px-5 py-8 gap-5">
         {/* New Here? Badge */}
         <Button 
           variant="ghost"
-          className="w-full h-auto py-3 px-5 rounded-[0.75rem] bg-gray-500 hover:bg-gray-600 text-white justify-start gap-3 shadow-none"
+          className="w-full h-auto py-3 px-5 rounded-2xl bg-gray-500 hover:bg-gray-600 text-white justify-start gap-3 shadow-none"
         >
           <IconEyes />
           <span className="font-bold text-base leading-[1.6]">처음 오셨나요?</span>
@@ -47,11 +47,11 @@ export function Sidebar() {
         {/* Convert Video Button */}
         <Button
           variant="outline"
-          className="w-full h-auto py-3 px-5 rounded-[0.75rem] bg-white border-[1.5px] border-gray-100 text-gray-500 hover:bg-gray-50 justify-between font-bold text-base shadow-none"
+          className="w-full h-auto py-3 px-5 rounded-2xl bg-white border-[1.5px] border-gray-100 text-gray-500 hover:bg-gray-50 justify-between font-bold text-base shadow-none"
         >
           <div className="flex items-center gap-2">
             <div className="relative w-7 h-7 flex items-center justify-center text-gray-500">
-               <Video className="w-[1.125rem] h-[1.125rem] fill-current" /> 
+               <Video className="w-4.5 h-4.5 fill-current" /> 
             </div>
             <span className="leading-[1.6]">영상 변환하기</span>
           </div>
